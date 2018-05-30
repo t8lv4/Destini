@@ -42,17 +42,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // TODO Step 3: Set the text for the storyTextView, topButton, bottomButton, and to T1_Story, T1_Ans1, and T1_Ans2
-        
+        storyTextView.text = story1
+        topButton.setTitle(answer1a, for: .normal)
+        bottomButton.setTitle(answer1b, for: .normal)
     }
 
     
     // User presses one of the buttons
     @IBAction func buttonPressed(_ sender: UIButton) {
     
-        // TODO Step 4: Write an IF-Statement to update the views
-                
+        if sender.tag == 1 {
+            storyTextView.text = story3
+
+            sender.setTitle(answer3a, for: .normal)
+            bottomButton.setTitle(answer3b, for: .normal)
+        }
+        
+        if sender.tag == 2 {
+            storyTextView.text = story2
+
+            sender.setTitle(answer1b, for: .normal)
+            topButton.setTitle(answer3a, for: .normal)
+        }
         // TODO Step 6: Modify the IF-Statement to complete the story
         
     
