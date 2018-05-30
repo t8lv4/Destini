@@ -23,8 +23,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         startFromFresh()
-        restartButton.isHidden = true
-
     }
 
     
